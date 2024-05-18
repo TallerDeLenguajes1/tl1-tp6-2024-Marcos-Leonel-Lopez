@@ -21,7 +21,8 @@ El tipo `string` en C# soporta las siguientes secuencias de escape:
 - `\xFF` - Carácter Unicode de 2 dígitos hexadecimales (también puede ser de 4 dígitos si se especifican 4 dígitos hexadecimales)
 
 #### ¿Qué sucede cuando utiliza el carácter `@` y `$` antes de una cadena de texto?
-- El carácter `@` antes de una cadena de texto se utiliza para crear **literales de cadena textuales**. Esto significa que las secuencias de escape no se procesan y la cadena puede abarcar múltiples líneas. Ejemplo: `@"Esto es una \cadena literal\ y puede tener \ cualquier carácter"`
+- El carácter `@` antes de una cadena de texto se utiliza para crear **literales de cadena textuales**. Esto significa que las secuencias de escape no se procesan y la cadena puede abarcar múltiples líneas.
+Ejemplo: `@"Esto es una \cadena literal\ y puede tener \ cualquier carácter"`
 
 - El carácter `$` antes de una cadena de texto se utiliza para **interpolación de cadenas**. Esto permite incluir expresiones dentro de la cadena que serán evaluadas y reemplazadas por sus valores. Las expresiones se colocan dentro de llaves `{}`. Ejemplo: `$"El valor de x es {x}"`
 
