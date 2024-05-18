@@ -1,6 +1,6 @@
 ﻿
 
-string aux;
+string aux,opera = "";
 int opc,repet = 0;
 float num1; 
 float resultado;
@@ -28,6 +28,7 @@ num1 = float.Parse(aux);
 switch (opc)
 {
     case 1:
+        opera = "El valor absoluto";
         if(num1 < 0){
             resultado = num1 * (-1);
         }else{
@@ -35,18 +36,23 @@ switch (opc)
         }
     break;
     case 2:
+        opera = "El cuadrado";
         resultado = num1*num1;
     break;
     case 3:
+        opera = "La raiz";
         resultado = (float)Math.Sqrt(num1);
     break;
     case 4:
+        opera = "El seno";
         resultado = (float)Math.Sin(num1);
     break;
     case 5:
+        opera = "El coseno";
         resultado = (float)Math.Cos(num1);
     break; 
     case 6:
+        opera = "La parte enteroa";
         resultado = (float)Math.Floor(num1);
     break;   
     default:
@@ -54,7 +60,7 @@ switch (opc)
         break;
 }
 
-Console.WriteLine($"Resultado de  ={resultado}");
+Console.WriteLine($"{opera} de {num1} es : {resultado}");
 
 Console.WriteLine($"Quiere realizar otra operacion? S / N");
 aux = Console.ReadLine();
