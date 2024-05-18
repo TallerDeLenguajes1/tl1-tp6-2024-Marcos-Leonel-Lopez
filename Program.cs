@@ -15,7 +15,6 @@ while (repet == 0)
     Console.WriteLine("====================================");
 
     opc = opcionCorrecta();
-
     num1 = floatCorrecto();
 
     switch (opc)
@@ -50,14 +49,12 @@ while (repet == 0)
     }
 
     Console.WriteLine($"{opera} de {num1} es : {resultado}");
-
     Console.WriteLine($"Quiere realizar otra operacion? S / N");
     aux = Console.ReadLine();
     if (aux == "n" || aux == "N")
     {
         repet++;
     }
-
 }
 
 Console.WriteLine("Ingrese un numero A:");
@@ -69,7 +66,6 @@ maxim = Math.Max(a, b);
 minim = Math.Min(a, b);
 
 Console.WriteLine($"El maximo fue: '{maxim}' y el minimo: '{minim}'");
-
 Console.WriteLine($"...");
 
 static int opcionCorrecta()
